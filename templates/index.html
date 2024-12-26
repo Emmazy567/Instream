@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Instream</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <h2>Instream</h2>
+  
+  <p id="fp">Download videos from your favourite social media platform for free</p>
+  
+  <div id="youtube">
+    <input type="text" id="video-url" placeholder="Enter video link">
+    <br>
+    <button type="submit" onclick="startDownload()">Get Video</button>
+  </div>
+
+  <div id="progress-container" style="display: none;">
+    <p>Downloading...</p>
+    <progress id="progress-bar" value="0" max="100"></progress>
+    <p id="progress-percent">0%</p>
+  </div>
+   <div class="footer">
+    <p>&copy; 2024 KlouDrive. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
